@@ -60,20 +60,10 @@ public class headbox_main extends ApplicationAdapter {
 		batch.begin();
 		batch.draw(white_cube, player.x, player.y);
 		batch.end();
-
-		if (player_speed.x > 200) player_speed.x += 200;
-		if (player_speed.x < 200) player_speed.x -= 200; 
-		if (player_speed.y > 200) player_speed.y += 200;
-		if (player_speed.y < 200) player_speed.y -= 200; 
-
-
-		player.x = player_speed.x;
-		player.y = player_speed.y;
-
-		if(Gdx.input.isKeyPressed(Keys.LEFT)) player_speed.x -= 200 * Gdx.graphics.getDeltaTime();
-		if(Gdx.input.isKeyPressed(Keys.RIGHT)) player_speed.x += 200 * Gdx.graphics.getDeltaTime();
-		if(Gdx.input.isKeyPressed(Keys.UP)) player_speed.y +=200 * Gdx.graphics.getDeltaTime();
-		if(Gdx.input.isKeyPressed(Keys.DOWN)) player_speed.y -=200 * Gdx.graphics.getDeltaTime();
+		if(Gdx.input.isKeyPressed(Keys.LEFT)) player.x -= 200 * Gdx.graphics.getDeltaTime();
+		if(Gdx.input.isKeyPressed(Keys.RIGHT)) player.x += 200 * Gdx.graphics.getDeltaTime();
+		if(Gdx.input.isKeyPressed(Keys.UP)) player.y +=200 * Gdx.graphics.getDeltaTime();
+		if(Gdx.input.isKeyPressed(Keys.DOWN)) player.y -=200 * Gdx.graphics.getDeltaTime();
 	}
 	
 	@Override
