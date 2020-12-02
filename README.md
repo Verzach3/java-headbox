@@ -6,15 +6,14 @@
 
 #### Run:
 
-*/
+
 ./gradlew desktop:run
-/*
+
 
 #### Build:
 
-*/
+
 ./gradlew desktop:build
-/*
 
 
 
