@@ -13,6 +13,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Rectangle;
+import com.badlogic.gdx.math.Vector;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
@@ -71,4 +72,15 @@ public class headbox_main extends ApplicationAdapter {
 		batch.dispose();
 		white_cube.dispose();
 	}
+
+	public static void bullet(){
+		Vector2 position;
+		int maxspeed = 500;
+		int lifespan = 10;
+
+
+
+
+	}
+
 }
