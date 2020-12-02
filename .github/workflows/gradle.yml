@@ -4,10 +4,14 @@
 name: Java CI with Gradle
 
 on:
+  workflow_dispatch:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    tags: 
+      - "v*"
+  #push:
+  #  branches: [ main ]
+  #pull_request:
+  #  branches: [ main ]
 
 jobs:
   build:
